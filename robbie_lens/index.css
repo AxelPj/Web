@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+	height: 2%;
+}
+.lien_nav
+{
+    color: black;
+}
+
+nav
+{
+    display: flex;
+    list-style: none;
+}
+.intro
+{
+    color: #A5B4FC;
+}
+.list_nav
+{
+    list-style: none;
+}
