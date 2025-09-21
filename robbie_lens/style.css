@@ -1,0 +1,105 @@
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+footer a
+{
+	padding-left: 10px;
+}
+body 
+{
+	display : table;
+	width: 100%;
+	background-color: #1F2039;
+}
+h1
+{
+	font-size: 3.5em;
+	color: #A5B4FC;
+	font-family: 'Montserrat', sans-serif;
+}
+h2, p, .liste-service
+{
+	background-color: #1f2039;;
+	color: #F9F8FF;
+}
+.liste-service
+{
+	list-style-position: inside;
+}
+p
+{
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.1em;
+	color: #F9F8FF;
+}
+ul
+{
+	font-size: 1em;
+	font-family: 'Manrope', sans-serif;
+}
+footer 
+{
+	display : table-row;
+	height: 2%;
+	background-color: white;
+}
+
+nav a 
+{
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: 'Manrope', sans-serif;
+}
+
+nav
+{
+	background-color: white;
+    display: flex;
+    list-style: none;
+	padding-left: 10px;
+}
+
+em
+{
+    color: #A5B4FC;
+}
+nav ul
+{
+	list-style: none;
+}
+.lien-degrade a
+{
+	font-family: 'Manrope', sans-serif;
+	color: white;
+	background: linear-gradient(90deg, #8360c3, #2ebf91);
+	border-radius: 50px;
+	text-decoration: none;
+}
+.border_p_l
+{
+	border-left: 1px solid #8e86b5;
+	padding: 50px;
+	margin: 0px;
+	
+}
+nav a:hover
+{
+	text-decoration: underline;
+}
+.lien-degrade a:hover
+{
+	background: linear-gradient(90deg, #696484, #8788BA);
+}
+
+nav img:hover, footer a:hover
+{
+	opacity: 0.5;
+}
+
+main
+{
+	text-align: center;
+}
