@@ -1,23 +1,46 @@
-
-html, body {
-	height: 100%;
-	margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+footer
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	width: 100%;
+}
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex
+}
+main
+{
+	padding-top: 20px;
+	height:100%;
 }
 footer a
 {
 	padding-left: 10px;
-}
-body 
-{
-	display : table;
-	width: 100%;
-	background-color: #1F2039;
 }
 h1
 {
 	font-size: 3.5em;
 	color: #A5B4FC;
 	font-family: 'Montserrat', sans-serif;
+	margin: 0em;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: normal;
+	height: 3em;
 }
 h2, p, .liste-service
 {
@@ -38,14 +61,11 @@ ul
 {
 	font-size: 1em;
 	font-family: 'Manrope', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	width: 100%;
 }
-footer 
-{
-	display : table-row;
-	height: 2%;
-	background-color: white;
-}
-
 nav a 
 {
 	color: black;
@@ -53,15 +73,13 @@ nav a
 	font-size: 1em;
 	font-family: 'Manrope', sans-serif;
 }
-
 nav
 {
-	background-color: white;
     display: flex;
+	background-color: white;
     list-style: none;
 	padding-left: 10px;
 }
-
 em
 {
     color: #A5B4FC;
@@ -74,16 +92,16 @@ nav ul
 {
 	font-family: 'Manrope', sans-serif;
 	color: white;
-	background: linear-gradient(90deg, #8360c3, #2ebf91);
+	background: #8e86b5;
 	border-radius: 50px;
 	text-decoration: none;
+	font-size:x-large;
 }
 .border_p_l
 {
 	border-left: 1px solid #8e86b5;
 	padding: 50px;
 	margin: 0px;
-	
 }
 nav a:hover
 {
@@ -93,13 +111,44 @@ nav a:hover
 {
 	background: linear-gradient(90deg, #696484, #8788BA);
 }
-
 nav img:hover, footer a:hover
 {
 	opacity: 0.5;
 }
-
+.contenu_a_propos, .p_photo
+{
+	padding: 8em;
+}
+.contenu_a_propos h2
+{
+	margin-top : 50px;
+}
+.contenu_a_propos ul
+{
+	margin-top : 20px;
+}
 main
 {
-	text-align: center;
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%; 
+	background-color: #1F2039;
+	margin: 0;
+    padding: 0;
+}
+.p_photo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 50%;
+    margin: 0 auto;
+}
+.p_photo img
+{
+	height: 35em;
+	border:1px solid black;
+}
+.p_photo p
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
 }
