@@ -11,21 +11,25 @@
 /* LAYOUT PRINCIPAL          */
 /* ------------------------- */
 header {
-    position: fixed;
     top: 0;
     left: 0;
     background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 70px;
 }
 
-footer {
-    position: fixed;
+footer 
+{
+    display: flex;
+    flex-direction:row;
     bottom: 0;
     left: 0;
     background-color: white;
     width: 100%;
+    justify-content:space-between;
 }
 
 main {
@@ -73,7 +77,7 @@ h1, h2 {
 nav {
     display: flex;
     background-color: white;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 nav ul
@@ -121,7 +125,7 @@ footer a {
     border-radius: 50px;
     text-decoration: none;
     font-size: x-large;
-    padding: 0.5em 1em;
+    padding: 1em 1.5em;
     display: inline-block;
 }
 
@@ -141,8 +145,8 @@ em {
     padding: 50px;
 }
 
-.contenu_a_propos, 
-.p_photo {
+.contenu_a_propos, .p_photo 
+{
     padding: 8em;
 }
 
@@ -158,40 +162,42 @@ em {
 {
     list-style-position: inside;
 }
-.p_photo {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* colonnes égales */
-    gap: 2em; /* espace entre texte et image */
-    width: 100%; /* conteneur centré et fluide */
-    margin: 0 auto;
-}
-.p_photo img 
+
+.p_photo
 {
-	height: 35em;
-    border: 1px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    padding: 0%;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    min-width: 100%;
 }
 
-.p_photo p 
+.p_photo .titre_paragraphe
 {
-	font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 500px;
+    width: 40em;
 }
+
+.p_photo img
+{
+    width: 35em;
+    height: 568px;
+}
+
 .p_photo h1
 {
-	display: grid;
-	font-size: 5em;
-	justify-content: end; 
+    font-size: 4em;
 }
-.titre_paragraphe .lien-degrade
+.p_photo p
 {
-	padding-top: 5em;
-	margin-right: 5em;
+    font-size: 1.5em;
+    padding-bottom: 40px;
 }
-.titre_paragraphe a
-{
-	padding: 1.5em 3em 1.5em 3em;
-}
-
 h3
 {
     text-align: center;
@@ -203,14 +209,18 @@ h3
 .photo
 {
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-color: white;
     padding: 8em;
-    justify-content: center;
+    align-items: center;
+}
+.photo h3
+{
+    padding-bottom: 1.5em;
 }
 .photo img
 {
-    padding-top:3em;
+    padding-top:1.5em;
 }
 .photo .lien-degrade
 {
@@ -218,44 +228,38 @@ h3
 }
 .photo2
 {
-    padding-top: 2%;
     display: flex;
     column-gap: 2%;
 }
-.titre1 h1
+
+main .h1
 {
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
-    padding-top: 2%;
-    background-color: #1F2039;
+    padding-left: 5em;
+    font-size: 2em;
+    height: 8em;
+}
+.conteneur-paysage
+{
+   display: grid;
+   background-color: white;
+   justify-content: center;
+   gap: 20px;
 }
 
-.conteneur-pf, .conteneur-pf h2
+.h2 
 {
+    padding-top: 100px;
     background-color: white;
-}
-.paysage img, .portrait img
-{
-    width: 20%;
-    height: 300px;
-}
-.conteneur_paysage h2, .conteneur_portrait h2
-{
     color: black;
-    font-size: 2.2em;
-    padding:1em;
+    justify-content: center;
+    grid-column: 1 / 4;
+    font-size: 3em;
+    font-weight: normal;
+    padding-bottom: 1.5em;
+    
 }
-.conteneur_paysage .paysage
+.conteneur-paysage img
 {
-
-}
-.portrait
-{
-}
-.paysage
-{
-    display: grid;
-    flex-wrap: ;
-    grid
+    height: 50em;
+    width: 45em;
 }
