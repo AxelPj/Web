@@ -29,6 +29,7 @@ footer
     left: 0;
     background-color: white;
     width: 100%;
+    height: 30%;
     justify-content:space-between;
 }
 
@@ -222,8 +223,8 @@ h3
 {
     padding-top:1.5em;
     position: relative;
-    background: lightgray;
 }
+
 .photo .lien-degrade
 {
     padding-top: 3em;
@@ -240,12 +241,20 @@ main .h1
     font-size: 2em;
     height: 8em;
 }
-.conteneur-paysage
+.conteneur-paysage, .conteneur-portrait
 {
-   display: grid;
-   background-color: white;
-   justify-content: center;
-   gap: 20px;
+    display: grid;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.conteneur-paysage img, .conteneur-portrait img
+{
+    height: 50em;
+    width: 45em;
+    display: block;
 }
 
 .h2 
@@ -260,35 +269,38 @@ main .h1
     padding-bottom: 1.5em;
     
 }
-.conteneur-paysage img
+.image-hover-container 
 {
-    height: 50em;
-    width: 45em;
-}
-
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.image-wrapper img {
-    display: block;
-    width: 35em;
-    height: 568px;
-}
-
-.image-wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;         /* écart en bas */
-  right: -30px;          /* écart à droite */
-  width: 25%;           /* longueur ligne horizontale */
-  height: 25%;          /* hauteur ligne verticale */
-  border-right: 2.5px solid #8e86b5;
-  border-bottom: 2.5px solid #8e86b5;
-}
-
-/* .lien-degrade
-{
+    position: relative;
     display: inline-block;
-} */
+    margin: 10px;
+}
+
+.image-hover-container .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.image-hover-container:hover .overlay 
+{
+    opacity: 1;
+}
+
+.overlay p
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 35%;
+    font-size:xx-large;
+    background: transparent;
+}
