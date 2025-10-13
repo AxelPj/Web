@@ -1,0 +1,82 @@
+/* ------------------------- */
+/* PAGE "À PROPOS"           */
+/* ------------------------- */
+
+main 
+{
+    background-color: #1F2039;
+    color: #F9F8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+main 
+{
+    padding-top: 5em;
+}
+
+.contenu_a_propos 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.contenu_a_propos h1 
+{
+    color: #A5B4FC;
+    font-size: 4em;
+    height: auto;
+
+}
+
+.contenu_a_propos p 
+{
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.border_p_l 
+{
+    margin-top: 3em;
+    padding-left: 15%;
+}
+
+.contenu_a_propos h2 
+{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #A5B4FC;
+}
+
+.liste-service 
+{
+    list-style: inside;
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.lien-degrade
+{
+    text-align: center;
+    margin:25% 0% 0% 15% 
+}
+
+.lien-degrade a {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    background: #8e86b5;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.8em 1.8em;
+    display: inline-block;
+}
+
+.lien-degrade a:hover 
+{
+    background: linear-gradient(90deg, #696484, #8788BA);
+}

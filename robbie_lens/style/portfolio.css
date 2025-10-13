@@ -1,0 +1,63 @@
+/* portfolio.css */
+
+main .h1 {
+    padding-left: 5em;
+    font-size: 2em;
+    height: 8em;
+}
+
+.conteneur-paysage, .conteneur-portrait {
+    display: grid;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conteneur-paysage img, .conteneur-portrait img {
+    height: 50em;
+    width: 45em;
+    display: block;
+}
+
+.h2 {
+    padding-top: 100px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    grid-column: 1 / 4;
+    font-size: 3em;
+    font-weight: normal;
+    padding-bottom: 1.5em;
+}
+
+.image-hover-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-hover-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.image-hover-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 35%;
+    font-size: xx-large;
+    background: transparent;
+}

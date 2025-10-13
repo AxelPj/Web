@@ -1,0 +1,35 @@
+main 
+{
+    background-color: #1F2039;
+    color: #F9F8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+table
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+td
+{
+    border: 2.5px solid #8e86b5;
+    padding: 6em 10em 6em 10em;
+    text-align: start;
+    font-size: 1.25em;
+}
+thead  td
+{
+    padding: 10px;
+    text-align: center;
+    font-weight: 1000;
+}
+caption
+{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: start;
+    color: #A5B4FC;
+    font-weight: 500;
+}

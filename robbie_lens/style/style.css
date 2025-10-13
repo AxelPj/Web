@@ -1,0 +1,156 @@
+/* ------------------------- */
+/* RESET GLOBAL              */
+/* ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------- */
+/* LAYOUT PRINCIPAL          */
+/* ------------------------- */
+header {
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+}
+
+main {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%; 
+    background-color: #1F2039;
+    margin: 0;
+    padding: 0;
+/*     padding-top: 5em; */
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    justify-content: space-between;
+}
+
+footer a {
+    padding-left: 10px;
+}
+
+/* ------------------------- */
+/* TYPOGRAPHIE               */
+/* ------------------------- */
+body {
+    font-family: 'Manrope', sans-serif;
+    color: #F9F8FF;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #A5B4FC;
+    font-weight: normal;
+    height: 3em;
+}
+
+h2, p, .liste-service {
+    background-color: #1F2039;
+    color: #F9F8FF;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+}
+
+em {
+    color: #A5B4FC;
+}
+
+/* ------------------------- */
+/* NAVIGATION                */
+/* ------------------------- */
+nav {
+    display: flex;
+    background-color: white;
+    padding-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: 'Manrope', sans-serif;
+    padding-right: 20px;
+    column-gap: 2%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav img:hover,
+footer a:hover {
+    opacity: 0.5;
+}
+
+/* ------------------------- */
+/* LIENS ET BOUTONS          */
+/* ------------------------- */
+.lien-degrade a {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    background: #8e86b5;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 1em 1.5em;
+    display: inline-block;
+}
+
+.lien-degrade a:hover {
+    background: linear-gradient(90deg, #696484, #8788BA);
+}
+
+/* ------------------------- */
+/* SECTIONS COMMUNES         */
+/* ------------------------- */
+
+.contenu_a_propos, .p_photo {
+    padding: 8em;
+}
+
+.contenu_a_propos h2 {
+    margin-top: 50px;
+}
+
+.contenu_a_propos ul {
+    margin-top: 20px;
+}
+
+.liste-service {
+    list-style-position: inside;
+}

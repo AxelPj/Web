@@ -11,9 +11,10 @@
             <style>
                 <link href ="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
             </style>
-            <title>À propos - Robbie Lens Photographie</title>
+            <title>Accueil - Robbie Lens Photographie</title>
             <link rel="icon" type="image/png" href="./Asset/img/logo.png">
-            <link href="style.css" rel="stylesheet">
+            <link href="style/style.css" rel="stylesheet">
+            <link href="style/index.css" rel="stylesheet">
         </head>
     <body>
         <header>
@@ -37,7 +38,7 @@
                 	    qui m’anime :<br> capturer l’essence de chaque instant.
                 	</p>
                 	<div class="lien-degrade">
-                	    <a href="">UN PROJET ? ÉCRIVEZ-MOI</a>
+                	    <a href="#encre1">UN PROJET ? ÉCRIVEZ-MOI</a>
                 	</div>
 				</div>
                 <div class="image-wrapper">
@@ -59,10 +60,16 @@
                 <div class = "lien-degrade">
                     <a class="lien-degrade-index" href="portfolio.html">VOIR MON PORTFOLIO</a>
                 </div>
-                <div class="contact">
-                    
-                </div>
             </div>
+            <h3>Parlons de votrer projets</h3>
+                    <form id="encre1" method= "get">
+                        <label for="prenom">prénom</label>
+                        <label for="email">email</label>
+                        <input type="text" name="prenom" id="prenom"  maxlength="20" required>
+                        <input type="text" name="email" id="email" size"30 required>
+                        <label for="message">message</label><br>
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="submit" value="Envoyer" id="btn-submit" />
         </main>
         <footer>
              <a href="a-propos.html">

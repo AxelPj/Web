@@ -1,0 +1,113 @@
+/* index.css */
+
+/* Section photo d'accueil */
+.p_photo {
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    padding: 0;
+    padding-bottom: 7em;
+    padding-top: 7em;
+    min-width: 100%;
+}
+
+.p_photo .titre_paragraphe {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 500px;
+    width: 40em;
+}
+
+.p_photo img {
+    width: 35em;
+    height: 568px;
+}
+
+.p_photo h1 {
+    font-size: 4em;
+}
+
+.p_photo p {
+    font-size: 1.5em;
+    padding-bottom: 40px;
+}
+
+/* Section portfolio d'accueil */
+.photo {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 7em;
+    align-items: center;
+}
+
+.photo h3 {
+    padding-bottom: 1.5em;
+    color:#1F2039;
+    font-size: 3em;
+}
+
+.photo img {
+    padding-top:1.5em;
+    position: relative;
+    height: 30em;
+}
+
+.photo .lien-degrade {
+    padding-top: 3em;
+}
+
+.photo2 {
+    display: flex;
+    column-gap: 2%;
+}
+
+h3
+{
+    padding-top: 2em;
+    font-size: 3em;
+    text-align: center;
+    color: #A5B4FC;
+}
+
+form
+{
+    display: grid;
+    width: 100%;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 20em 20em;
+    gap: 20px;
+}
+
+label
+{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+input
+{
+    font-size: 2em;
+}
+textarea
+{
+    grid-column: 1 / 3;
+    height: 20em;
+    font-size: 2em;
+}
+#btn-submit
+{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    background: #8e86b5;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 1em 1.5em;
+    display: inline-block;
+    background: linear-gradient(90deg, #696484, #8788BA);
+    width: 27.5em;
+}
