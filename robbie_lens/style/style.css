@@ -154,3 +154,14 @@ footer a:hover {
 .liste-service {
     list-style-position: inside;
 }
+
+
+@media screen and (max-width: 996px) 
+{
+	header nav 
+	{
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	}
+}

@@ -1,33 +1,57 @@
 /* portfolio.css */
 
-main .h1 {
-    padding-left: 5em;
-    font-size: 2em;
-    height: 8em;
+h1
+{
+	padding: 80px;
+    font-size: 3.5em;
+	font-weight: 500;
+	height: 200px;
+
 }
 
-.conteneur-paysage, .conteneur-portrait {
+.conteneur-paysage
+{
     display: grid;
     background-color: white;
     justify-content: center;
+	grid-template-rows: 300px 300px 300px;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 5em;
+	padding-right: 5em;
     gap: 20px;
 }
 
+.conteneur-portrait 
+{
+	display: grid;
+	background-color: white;
+	justify-content: center;
+	grid-template-rows: 300px 300px;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 5em;
+	padding-right: 5em;
+	gap: 20px;
+}
+
 .conteneur-paysage img, .conteneur-portrait img {
-    height: 50em;
-    width: 45em;
+    height: 100%;
+    width: 100%;
     display: block;
+	object-fit:cover;
 }
 
 .h2 {
-    padding-top: 100px;
     background-color: white;
     color: black;
     justify-content: center;
     grid-column: 1 / 4;
-    font-size: 3em;
-    font-weight: normal;
-    padding-bottom: 1.5em;
+    font-size: 1.75em;
+    font-weight: bold;
+	height: 100px;
+	padding-left: 3.25em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: 'Manrope', sans-serif;
 }
 
 .image-hover-container {
@@ -60,4 +84,13 @@ main .h1 {
     left: 35%;
     font-size: xx-large;
     background: transparent;
+}
+
+@media screen and (max-width: 996px) 
+{
+	.conteneur-paysage, .conteneur-portrait
+	{
+	  grid-template-columns: 1fr;
+	  gap: 15px;
+	}
 }
