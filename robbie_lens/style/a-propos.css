@@ -47,9 +47,11 @@ main
 
 .contenu_a_propos h2 
 {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-weight: 400;
     margin-bottom: 0.5em;
-    color: #A5B4FC;
+    color: #ffffff;
+    width: 25%;
 }
 
 .liste-service 
@@ -81,33 +83,42 @@ main
     background: linear-gradient(90deg, #696484, #8788BA);
 }
 
-table {
+table 
+{
 	color: white;
 	text-align: center;
 	width: 100%;
 	border-collapse: collapse;
   }
   
-  td,
-  th {
+  td, th 
+  {
 	padding: 15px;
 	border: 1px solid #a5b4fc;
   }
   
-  td {
+  td 
+  {
 	padding: 80px;
   }
   
-  h2 {
-	margin-bottom: 80px;
+  h2 
+  {
+	margin-bottom: 40px;
   }
   
-  h1,
-  h2 {
+  h1, h2 
+  {
 	text-align: center;
   }
   
-  @media screen and (max-width: 996px) {
+  .section-tarifs
+  {
+    padding-top: 5em;
+  }
+
+  @media screen and (max-width: 996px) 
+  {
 	.section-tarifs {
 	  display: none;
 	}

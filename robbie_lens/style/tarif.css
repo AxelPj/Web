@@ -5,31 +5,101 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5em 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 5em;
 }
-table
+h2 
 {
+    font-size: 4em;
+    font-weight: 400;
+    color: #A5B4FC;
+    margin-bottom: 2em;
+    width: 100%;
+    margin-top: 1em;
+    position: absolute;
+    top: 1.5em;
+    left: 30%;
+}
+.tarification-blocs 
+{
+    display: flex;
+    gap: 4em; 
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+    padding-top: 12em;
+}
+.tarification-blocs p
+{
+    background-color: #2A2B4A;
+}
+.tarification-blocs > div 
+{
+    background-color: #2A2B4A;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow:  0 10px rgba(0,0,0,0.2);
+    max-width: 300px;
+    flex: 1 1 250px;
+}
+h3 
+{
+    color: #A5B4FC;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+h4 
+{
+    color: white;
+    padding-top: 2em;
+    font-size: 1.3em;
+    display: flex;
+}
+.tarif-album h4
+{
+    padding-top: 3em;
+}
+.petit-text 
+{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+}
+
+.tarification-table 
+{
+    width: 100%;
+    max-width: 1000px;
+}
+
+table 
+{
+    width: 100%;
     border-collapse: collapse;
-    margin: auto;
+    color: #F9F8FF;
 }
-td
+td 
 {
-    border: 2.5px solid #8e86b5;
-    padding: 6em 10em 6em 10em;
-    text-align: start;
-    font-size: 1.25em;
-}
-thead  td
-{
-    padding: 10px;
+    border: 2px solid #8e86b5;
+    padding: 1em;
+    font-size: 1.5em;
     text-align: center;
-    font-weight: 1000;
 }
-caption
+
+thead td 
 {
-    font-size: 2.5em;
+    font-weight: bold;
+}
+tbody td
+{
+    font-size: 1em;
+}
+caption 
+{
+    font-size: 2em;
     margin-bottom: 1em;
-    text-align: start;
     color: #A5B4FC;
     font-weight: 500;
+    text-align: left;
 }

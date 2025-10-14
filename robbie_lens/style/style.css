@@ -13,59 +13,76 @@
 header {
     top: 0;
     left: 0;
-    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 70px;
+    padding: 10px 5px 0px 20px;
 }
 
-main {
+.reseau
+{
+    display: flex;
+    padding: 10px 20px 0px 0px;
+    width: 100%;
+    justify-content: end;
+    gap: 1em;
+}
+main 
+{
     min-width: 100%;
     max-width: 100%;
     width: 100%; 
     background-color: #1F2039;
     margin: 0;
     padding: 0;
-/*     padding-top: 5em; */
 }
 
-footer {
+footer 
+{
     display: flex;
     flex-direction: row;
+    padding: 10px 0px 10px 20px;
     bottom: 0;
     left: 0;
-    background-color: white;
     width: 100%;
     height: 30%;
-    justify-content: space-between;
 }
 
-footer a {
+footer a 
+{
     padding-left: 10px;
 }
 
 /* ------------------------- */
 /* TYPOGRAPHIE               */
 /* ------------------------- */
-body {
+body 
+{
     font-family: 'Manrope', sans-serif;
     color: #F9F8FF;
+    margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
-h1, h2 {
+h1, h2 
+{
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1 
+{
     font-size: 3.5em;
     color: #A5B4FC;
     font-weight: normal;
     height: 3em;
 }
 
-h2, p, .liste-service {
+h2, p, .liste-service 
+{
     background-color: #1F2039;
     color: #F9F8FF;
 }
@@ -82,13 +99,14 @@ em {
 /* ------------------------- */
 /* NAVIGATION                */
 /* ------------------------- */
-nav {
+nav 
+{
     display: flex;
-    background-color: white;
     padding-left: 10px;
 }
 
-nav ul {
+nav ul 
+{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -98,29 +116,34 @@ nav ul {
     font-size: 1.3em;
     font-family: 'Manrope', sans-serif;
     padding-right: 20px;
-    column-gap: 2%;
+    column-gap: 10%;
 }
 
-nav a {
+nav a 
+{
     color: black;
     text-decoration: none;
     font-size: 1em;
     font-family: 'Manrope', sans-serif;
+    
 }
 
-nav a:hover {
+nav a:hover 
+{
     text-decoration: underline;
 }
 
 nav img:hover,
-footer a:hover {
+footer a:hover 
+{
     opacity: 0.5;
 }
 
 /* ------------------------- */
 /* LIENS ET BOUTONS          */
 /* ------------------------- */
-.lien-degrade a {
+.lien-degrade a 
+{
     font-family: 'Manrope', sans-serif;
     color: white;
     background: #8e86b5;
@@ -131,7 +154,8 @@ footer a:hover {
     display: inline-block;
 }
 
-.lien-degrade a:hover {
+.lien-degrade a:hover 
+{
     background: linear-gradient(90deg, #696484, #8788BA);
 }
 
@@ -139,19 +163,23 @@ footer a:hover {
 /* SECTIONS COMMUNES         */
 /* ------------------------- */
 
-.contenu_a_propos, .p_photo {
+.contenu_a_propos, .p_photo 
+{
     padding: 8em;
 }
 
-.contenu_a_propos h2 {
+.contenu_a_propos h2 
+{
     margin-top: 50px;
 }
 
-.contenu_a_propos ul {
+.contenu_a_propos ul 
+{
     margin-top: 20px;
 }
 
-.liste-service {
+.liste-service 
+{
     list-style-position: inside;
 }
 
